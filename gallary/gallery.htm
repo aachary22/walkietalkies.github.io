@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prototype Gallery</title>
+<meta charset="UTF-8">
+<meta name= "viewport" content= "width=divice-width, initial-scale=1.0">
+<style type="text/css">
+body{
+background:#caebf2;
+}
+header{
+background: #405580;
+width: 100%;
+height: 86px;
+position: fixed;
+top:0;
+left:0;
+z-index:100;
+opacity: .90;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.trigger {
+  display: none;
+}
+
+.slider, .slider-outputs {
+  position: relative;
+  height: 280px;
+  
+}
+
+.slide {
+  background-color: #caebf2;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 120px;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img {
+  filter: brightness(50%);
+  height: 100%;
+  width:40%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 30%;
+  width: calc(100% - 1rem);
+  color: black;
+  text-align: center;
+  left: 30%;
+}
+
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav {
+  width: 100%;
+  text-align: center;
+  margin:8rem 0;
+}
+
+.slider-nav__item {
+  display: inline-block;
+}
+
+.slider-nav__label {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label:hover,
+.slider-nav__label:active,
+.slider-nav__label:focus {
+  background-color: gray;
+  color: black;
+}
+
+#logo{
+margin: 20px;
+float:left;
+width:230px;
+height:60px;
+background: url("logo.png") no-repeat center;
+}
+section{
+
+ width: 29%;
+ float: left;
+ margin: 4% 2%;
+ text-align:center;
+ }
+footer{
+
+position: absolute;
+  bottom: 0;
+  height: 12.6rem;  
+ background: #333333;
+ width: 100%; 
+ overflow: hidden;
+ opacity: .90;
+ }
+ footer p, footer h3{
+ color: #FFF;
+ }
+ ul.social li {
+ display:inline;
+ 
+ }
+
+ footer.second{
+ border-top: 1px solid #4D4E50;
+ background-color: #333333;
+ max-height: 35px;
+ text-align: center;
+ opacity:.94;
+
+ 
+ }
+
+</style>
+<header>
+<a href="#" id="logo"> </a>
+<nav>
+<a href="#" id="menu-icon"> </a>
+<ul>
+<li> <a href="../index.htm" class="current">Home</a>  </li>
+<li> <a href="#">Prototype Gallery</a>  </li>
+<li> <a href="../contact/contact.htm">Contact</a>  </li>
+
+
+</ul>
+</nav>
+</header>
+</head>
+
+<body>
+ <div class="slider-outputs">
+  <div class="slider">
+    <input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="../img/keyboard.jpg" />
+        <figcaption class="slide-caption"><p>This image depicts...</p></figcaption>
+      </figure>
+    </div>
+    <input type="radio" name="slider" class="trigger" id="two" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="../img/work.jpg" />
+        <figcaption class="slide-caption"><p>This image depicts...</p></figcaption>
+      </figure>
+    </div>
+    <input type="radio" name="slider" class="trigger" id="three" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="../img/what.png" />
+        <figcaption class="slide-caption"><p>This image depicts...</p></figcaption>
+      </figure>
+    </div>
+  </div>
+  <ul class="slider-nav">
+    <li class="slider-nav__item"><label class="slider-nav__label" for="one">1</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="two">2</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="three">3</label></li>
+  </ul>
+</div>
+<footer>
+<section>
+<h3><b> Walkie Talkie</b></h3>
+		<p>3137 S Federal St<br>
+		   Chicago, IL 60616<br></p>
+</section>
+<section>
+<h3>Connect with us!</h3>
+<ul class ="social">
+<li><a href=https://www.facebook.com/><img src="../img/facebook.PNG" alt="facebooklogo" height="43" width="45" />  </li>
+<li><a href=https://www.twitter.com/><img src="../img/twitter.jpg" alt="twitterlogo" height="43" width="45" />  </li>
+
+</ul>
+
+</section>
+<section>
+<img src="../img/keyboard.jpg" alt="keyboardlogo" height="123" width="230" />
+
+</section>
+</footer>
+
+<footer class ="second">
+<p> @Copyright-Walkie Talkies,2020 </p>
+</footer>
+</body>
+</html>
