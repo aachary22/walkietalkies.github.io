@@ -2,11 +2,23 @@
 <html lang="en"> 
 <head>
 <meta charset= "utf-8"/>
+
 <title> Contact Us! </title>
-
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="contacting">
 <h1>Question form for Walkie Talkies </h1>
 
+</div>
+<div class="form">
+<form-id="form" method="post" action="contactforms.php">
+<input name="name" type="text" class="form-control" placeholder="your name" required>
+<br>
+<input name="email" type="email" class="form-control" placeholder="your email" required>
+<br>
+<textarea name="message" class="form-control" placeholder="Message" row="4" ></textarea>
+<br>
+<input type="submit" class="form-control submit" value="Send Message">
+</form>
 </head>
 <body>
 </body>

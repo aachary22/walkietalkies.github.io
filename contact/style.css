@@ -1,0 +1,38 @@
+body{
+margin:0;
+padding:0;
+text-allign: center;
+background:#caebf2;
+font-family: sans-serif;
+
+}
+.contacting{
+	margin-top: 100px;
+	color:black;
+	text-transform:uppercase;
+	transition: all 4s ease-in-out;
+}
+.contacting h1{
+	font-size:32px;
+	line-height:10px;
+}
+form{
+	margin-top:50px;
+	transition: all 4s ease-in-out;
+	
+}
+.form-control{
+	width: 600px; 
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	color:black;
+	font-size: 18px;
+	margin-bottom:16px;
+	
+}
+input{
+	height:45px;
+	
+	
+}
