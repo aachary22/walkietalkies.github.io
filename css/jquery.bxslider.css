@@ -1,18 +1,4 @@
-/**
- * BxSlider v4.1.2 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2014
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- */
 
-
-/** RESET AND LAYOUT
-===================================*/
 
 .bx-wrapper {
 max-width: 1020px;
@@ -26,14 +12,13 @@ max-width: 1020px;
 	display: block;
 }
 
-/** THEME
-===================================*/
+
 
 .bx-wrapper .bx-viewport {
 	left: 0px;
 	background: #fff;
 	
-	/*fix other elements on the page moving (on Chrome)*/
+	
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
     	-ms-transform: translatez(0);
@@ -61,7 +46,7 @@ max-width: 1020px;
 	z-index: 2000;
 }
 
-/* PAGER */
+
 
 .bx-wrapper .bx-pager {
 	text-align: center;
@@ -97,7 +82,7 @@ max-width: 1020px;
 	background: #000;
 }
 
-/* DIRECTION CONTROLS (NEXT / PREV) */
+
 
 .bx-wrapper .bx-prev {
 	left: 10px;
@@ -168,7 +153,7 @@ max-width: 1020px;
 	background-position: -86px -33px;
 }
 
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	text-align: left;
@@ -180,7 +165,7 @@ max-width: 1020px;
 	width: 35px;
 }
 
-/* IMAGE CAPTIONS */
+
 
 .bx-wrapper .bx-caption {
 	position: absolute;

@@ -3,7 +3,7 @@ function responsiveMobileMenu() {
 
 
 
-		// $(this).children('ul').addClass('nav-menu'); // mark main menu list
+		
 
 
 		var $style = $(this).attr('nav-menu-style'); // get menu style
@@ -14,17 +14,15 @@ function responsiveMobileMenu() {
 		}
 
 
-		/* 	width of menu list (non-toggled) */
+	
 
 		var $width = 0;
 		$(this).find('ul li').each(function() {
 			$width += $(this).outerWidth();
 		});
 
-		// if modern browser
-
 		if ($.support.leadingWhitespace) {
-			// $(this).css('max-width', $width * 1.2 + 'px');
+		
 		}
 		// 
 		else {
@@ -54,11 +52,10 @@ function getMobileMenu() {
 
 function adaptMenu() {
 
-	/* 	toggle menu on resize */
+	
 
 	$('.nav').each(function() {
-		// var $width = $(this).css('max-width');
-		// $width = $width.replace('px', ''); 
+		
 		var $width = 768;
 		if ($(this).parent().width() < $width * 1.05) {
 			$(this).children('.nav-menu').hide(0);
