@@ -51,3 +51,14 @@ form .submit:hover{
 	cursor:pointer;
 	
 }
+footer{
+	background:#262E37;
+	width:100%;
+	margin-top: 35%;
+	padding:1% 0;
+	overflow: auto;
+	color:white;
+}
+footer p{
+	color: white;
+}
